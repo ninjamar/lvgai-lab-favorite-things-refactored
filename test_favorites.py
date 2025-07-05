@@ -43,7 +43,7 @@ def test_add_favorite(monkeypatch):
     add_favorite(favorites)
     assert favorites["music"] == "rock"
 
-def test_update_favorite(monkeypatch, capsys):
+def test_update_favorite(monkeypatch):
     favorites = {"movie": "Cars"}
     inputs = iter(["movie", "Cars"])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
