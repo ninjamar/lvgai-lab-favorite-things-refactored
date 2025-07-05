@@ -54,7 +54,7 @@ def main():
         display_favorites(favorites)
         lookup_favorite(favorites)
 
-        add_new = input("Do you want to (update)(add) a new favorite and value?: ")
+        add_new = input("Do you want to (update)/(add) a new favorite and value?: ")
         if add_new.lower() == "update":
             update_favorite(favorites)
         elif add_new.lower() == "add":
